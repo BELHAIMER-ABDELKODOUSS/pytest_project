@@ -1,0 +1,669 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no"
+    />
+    <link href="{% static 'images/favicon.png' %}" rel="icon" />
+    <title>Documentation | PYTEST</title>
+    <meta
+      name="description"
+      content="Your ThemeForest item Name and description"
+    />
+    <meta name="author" content="harnishdesign.net" />
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <!-- Stylesheet
+============================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}"
+    />
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'vendor/font-awesome/css/all.min.css' %}"
+    />
+    <!-- Magnific Popup -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'vendor/magnific-popup/magnific-popup.min.css' %}"
+    />
+    <!-- Highlight Syntax -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'vendor/highlight.js/styles/github.css' %}"
+    />
+    <!-- Custom Stylesheet -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/stylesheet.css' %}"
+    />
+  </head>
+
+  <body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="lds-ellipsis">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Document Wrapper   
+=============================== -->
+    <div id="main-wrapper">
+      <!-- Header
+  ============================ -->
+      <header id="header" class="sticky-top">
+        <!-- Navbar -->
+        <nav class="primary-menu navbar navbar-expand-lg navbar-dropdown-dark">
+          <div class="container-fluid">
+            <!-- Sidebar Toggler -->
+            <button
+              id="sidebarCollapse"
+              class="navbar-toggler d-block d-md-none"
+              type="button"
+            >
+              <span></span><span class="w-75"></span><span class="w-50"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="logo ml-md-3" href="index.html" title="iDocs PYTEST">
+              <img src="{% static 'images/logo.png' %}" alt="iDocs Template" />
+            </a>
+            <span class="text-2 ml-2">v1.0</span>
+            <!-- Logo End -->
+
+            <!-- Navbar Toggler -->
+            <button
+              class="navbar-toggler ml-auto"
+              type="button"
+              data-toggle="collapse"
+              data-target="#header-nav"
+            >
+              <span></span><span></span><span></span>
+            </button>
+
+            <div
+              id="header-nav"
+              class="collapse navbar-collapse justify-content-end"
+            >
+              <ul class="navbar-nav">
+                <li class="dropdown">
+                  <a class="dropdown-toggle" href="#">Dropdown</a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li class="dropdown">
+                      <a class="dropdown-item dropdown-toggle" href="#"
+                        >Dropdown Action</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="index.html">Action</a>
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="feature-header-dark.html"
+                            >Another Action</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="feature-header-primary.html"
+                            >Something Else Here</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="index-2.html"
+                            >Another Link</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another Action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something Else Here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://themeforest.net/user/harnishdesign/portfolio?ref=HarnishDesign"
+                    >Other Template</a
+                  >
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://themeforest.net/user/harnishdesign/#contact?ref=HarnishDesign"
+                    >Support</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <ul class="social-icons social-icons-sm ml-lg-2 mr-2">
+              <li class="social-icons-twitter">
+                <a
+                  data-toggle="tooltip"
+                  href="http://www.twitter.com/harnishdesign/"
+                  target="_blank"
+                  title=""
+                  data-original-title="Twitter"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+              </li>
+              <li class="social-icons-facebook">
+                <a
+                  data-toggle="tooltip"
+                  href="http://www.facebook.com/harnishdesign/"
+                  target="_blank"
+                  title=""
+                  data-original-title="Facebook"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="social-icons-dribbble">
+                <a
+                  data-toggle="tooltip"
+                  href="http://www.dribbble.com/harnishdesign/"
+                  target="_blank"
+                  title=""
+                  data-original-title="Dribbble"
+                  ><i class="fab fa-dribbble"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <!-- Navbar End -->
+      </header>
+      <!-- Header End -->
+
+      <!-- Content
+  ============================ -->
+      <div id="content" role="main">
+        <!-- Sidebar Navigation
+	============================ -->
+        <div class="idocs-navigation bg-light">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#idocs_start">Getting Started</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_installation"
+                    >Installation</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_html_structure"
+                    >Create your first test</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_sass">Run multiple tests</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_color_schemes"
+                    >Assert that a certain exception is raised</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_theme_customization"></a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#idocs_layout">Demo_Practice</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_header">Setup & Testing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_navbar"
+                    >Fixtures & Fixture Factory</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_sidebar"
+                    >Factory Boy and Faker</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_footer"
+                    >Testing with Pytest, Selenium</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Docs Content
+	============================ -->
+        <div class="idocs-content">
+          <div class="container">
+            <!-- Getting Started
+		============================ -->
+            <section id="idocs_start">
+              <h1>Documentation</h1>
+              <h2>Get Started With Pytest Documentation</h2>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- Installation
+		============================ -->
+            <section id="idocs_installation">
+              <h2>Installation</h2>
+              <p class="lead">
+                To install Pytest, you need to have Python installed on your
+                system. If you don't have Python installed, you can download and
+                install it from the official Python website
+                (https://www.python.org/). :
+              </p>
+              <p>
+                Once you have Python installed, you can use pip, the package
+                manager for Python, to install Pytest. To install Pytest using
+                pip, follow these steps:
+              </p>
+              <ol>
+                <li>Open a terminal or command prompt window</li>
+                <li>
+                  Make sure that you have the latest version of
+                  <strong>pip</strong> by running the following command:
+                  <strong>pip install --upgrade pip</strong>
+                </li>
+                <li>
+                  Install Pytest by running the following command:
+                  <strong>pip install pytest</strong>
+                </li>
+                <li>
+                  <p>
+                    That's it! Pytest should now be installed on your system and
+                    ready to use. You can verify that Pytest is installed by
+                    running the pytest --version command, which should print the
+                    version number of Pytest that you have installed.
+                    Alternatively, you can also install Pytest from source by
+                    downloading the source code from the Pytest GitHub
+                    repository (https://github.com/pytest-dev/pytest) and
+                    running the python setup.py install command. However, this
+                    method is not recommended unless you have a specific reason
+                    for installing Pytest from source.
+                  </p>
+                </li>
+              </ol>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- HTML Structure
+		============================ -->
+            <section id="idocs_html_structure">
+              <h2>Create your first test</h2>
+              <p>To create a test with Pytest, you need to do the following:</p>
+              <ol>
+                <li>
+                  Create a Python file in your project directory. This file will
+                  contain your test functions.
+                </li>
+                <li>Import the pytest module.</li>
+                <li>
+                  Define a test function by decorating it with the
+                  @pytest.mark.test decorator.
+                </li>
+                <li>Write the code for your test inside the test function.</li>
+                <li>Run the test using the pytest command.</li>
+              </ol>
+              <p>
+                Here's an example of a simple test function that checks if the
+                result of the add function is correct:
+              </p>
+
+              <pre><code class="python">
+# test_example.py;
+import pytest
+
+def add(x, y):
+    return x + y
+
+def test_add():
+    assert add(2, 3) == 5
+
+</code></pre>
+
+              <p>
+                To run this test, you can use the pytest command from the
+                command line:
+              </p>
+              <pre><code class="bash">
+$ pytest test_example.py
+              </code></pre>
+              <p>
+                This will run the test_add test function and print the result.
+                If the test passes, you should see a message like this:
+              </p>
+              <pre><code class="bash">== 1 passed in 0.01s ==</code></pre>
+              <p>
+                If the test fails, you will see an error message indicating what
+                went wrong. That's it! You've just written and run your first
+                test with Pytest. You can now add more test functions to your
+                test file and run them using the pytest command.
+              </p>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- Sass
+		============================ -->
+            <section id="idocs_sass">
+              <h2>Run multiple tests</h2>
+              <p>To run multiple tests using Pytest, you can either:</p>
+              <ol>
+                <li>Create multiple test functions in the same Python file.</li>
+                <li>Create multiple test files and run them all at once.</li>
+              </ol>
+              <p>
+                Here's an example of how you can create multiple test functions
+                in the same Python file:
+              </p>
+              <pre><code class="python">
+# test_example.py
+import pytest
+
+def add(x, y):
+    return x + y
+
+def test_add():
+    assert add(2, 3) == 5
+
+def test_add_negative():
+    assert add(-1, -1) == -2
+              </code></pre>
+              <p>
+                To run all of these tests, you can use the pytest command from
+                the command line:
+              </p>
+              <pre><code class="bash">
+$ pytest test_example.py
+              </code></pre>
+              <p>
+                This will run both the test_add and test_add_negative test
+                functions and print the result. Alternatively, you can also
+                create multiple test files and run them all at once. For
+                example, you might have a file called test_add.py that contains
+                tests for the add function, and another file called
+                test_subtract.py that contains tests for the subtract function.
+                To run all of these tests, you can use the pytest command
+                followed by a directory path:
+              </p>
+              <pre><code class="bash">$ pytest tests/</code></pre>
+              <p>
+                This will run all tests in the tests directory and its
+                subdirectories. You can also use the -k option to specify a test
+                name pattern to filter the tests that you want to run. For
+                example, to run only the tests that contain the word "add" in
+                their names, you can use the following command:
+              </p>
+              <pre><code class="bash">
+$ pytest -k add
+              </code></pre>
+              <p>
+                This will run all tests that match the pattern "add" in their
+                names, regardless of which file they are in.
+              </p>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- Color Schemes
+		============================ -->
+            <section id="idocs_color_schemes">
+              <h2>Assert that a certain exception is raised</h2>
+              <p>
+                To assert that a certain exception is raised in Pytest, you can
+                use the pytest.raises function. This function allows you to test
+                whether a block of code raises an expected exception. Here's an
+                example of how you can use pytest.raises to test for an
+                exception:
+              </p>
+              <pre><code class="python">             
+import pytest
+
+def test_division_by_zero():
+    with pytest.raises(ZeroDivisionError):
+        1 / 0
+</code></pre>
+
+              <p>
+                In this example, the test function uses the pytest.raises
+                function to wrap a block of code that divides 1 by 0. This block
+                of code is expected to raise a ZeroDivisionError, and the
+                pytest.raises function will catch this exception and consider
+                the test to be a success. If the exception is not raised, or if
+                a different exception is raised, the test will fail. You can
+                also use the pytest.raises function to test for specific
+                exception messages or to specify the expected exception type as
+                an argument. For example:
+              </p>
+              <pre><code>
+import pytest
+
+def test_division_by_zero():
+    with pytest.raises(ZeroDivisionError, match='division by zero'):
+        1 / 0
+</code></pre>
+              <p>
+                This test will only pass if a ZeroDivisionError is raised with
+                the message "division by zero". You can also test for multiple
+                exception types by using a tuple of exception types as the
+                argument to pytest.raises. For example:
+              </p>
+              <pre><code>
+import pytest
+
+def test_division_by_zero():
+    with pytest.raises((ZeroDivisionError, TypeError)):
+        1 / 'a'
+</code></pre>
+              <p>
+                This test will pass if either a ZeroDivisionError or a TypeError
+                is raised.
+              </p>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- Customization
+		============================ -->
+
+            <!-- Layout
+		============================ -->
+            <section id="idocs_layout">
+              <h2>Demo Practice</h2>
+              <p class="lead mb-5">
+                Documentation and examples for header, navbar, sidebar, footer
+              </p>
+            </section>
+
+            <!-- Header
+		============================ -->
+            <section id="idocs_header">
+              <h2>Setup & Testing</h2>
+              <p>
+                To set up pytest in a Django project, you will need to do the
+                following steps: :
+              </p>
+              <ol>
+                <li>
+                  Install the pytest and pytest-django packages using pip:
+                </li>
+                <br /><br />
+                <pre><code class="bash">
+pip install pytest pytest-django
+</code></pre>
+                <li>
+                  Create a tests directory at the root level of your Django
+                  project. This is where you will put your tests.
+                </li>
+                <li>Point pytest to your Django settings</li>
+                <p>
+                  You need to tell pytest which Django settings should be used
+                  for test runs. The easiest way to achieve this is to create a
+                  pytest configuration file with this information.
+                </p>
+                <li>
+                  Create a file called pytest.ini in your project root directory
+                  that contains:
+                </li>
+                <pre><code class="python">
+[pytest]
+DJANGO_SETTINGS_MODULE = yourproject.settings
+
+python_files = tests.py test_*.py *_tests.py
+
+</code></pre>
+              </ol>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- Navbar
+		============================ -->
+
+            <hr class="divider" />
+
+            <!-- Image
+		============================ -->
+
+            <hr class="divider" />
+
+            <!-- Changelog
+		============================ -->
+          </div>
+        </div>
+      </div>
+      <!-- Content end -->
+
+      <!-- Footer
+  ============================ -->
+      <footer id="footer" class="section bg-dark footer-text-light">
+        <div class="container">
+          <ul
+            class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3"
+          >
+            <li>
+              <a
+                data-toggle="tooltip"
+                href="https://twitter.com/harnishdesign/"
+                target="_blank"
+                title=""
+                data-original-title="Twitter"
+                ><i class="fab fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                data-toggle="tooltip"
+                href="http://www.facebook.com/harnishdesign/"
+                target="_blank"
+                title=""
+                data-original-title="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                data-toggle="tooltip"
+                href="http://www.dribbble.com/harnishdesign/"
+                target="_blank"
+                title=""
+                data-original-title="Dribbble"
+                ><i class="fab fa-dribbble"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                data-toggle="tooltip"
+                href="http://www.github.com/"
+                target="_blank"
+                title=""
+                data-original-title="GitHub"
+                ><i class="fab fa-github"></i
+              ></a>
+            </li>
+          </ul>
+          <p class="text-center">
+            Copyright &copy; 2020
+            <a
+              href="http://www.harnishdesign.net/idocs-one-page-documentation-html-template/"
+              >iDocs</a
+            >. All Rights Reserved.
+          </p>
+          <p class="text-2 text-center mb-0">
+            Design &amp; Develop by
+            <a
+              class="btn-link"
+              target="_blank"
+              href="http://www.harnishdesign.net/"
+              >HarnishDesign</a
+            >.
+          </p>
+        </div>
+      </footer>
+      <!-- Footer end -->
+    </div>
+    <!-- Document Wrapper end -->
+
+    <!-- Back To Top -->
+    <a
+      id="back-to-top"
+      data-toggle="tooltip"
+      title="Back to Top"
+      href="javascript:void(0)"
+      ><i class="fa fa-chevron-up"></i
+    ></a>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <!-- JavaScript
+============================ -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- Highlight JS -->
+    <script src="{% static 'vendor/highlight.js/highlight.min.js' %}"></script>
+    <!-- Easing -->
+    <script src="{% static 'vendor/jquery.easing/jquery.easing.min.js' %}"></script>
+    <!-- Magnific Popup -->
+    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+    <!-- Custom Script -->
+    <script src="{% static 'js/theme.js' %}"></script>
+  </body>
+</html>
