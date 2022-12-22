@@ -214,8 +214,36 @@
 	============================ -->
         <div class="idocs-navigation bg-light">
           <ul class="nav flex-column">
+            <li class="nav-item active">
+              <a class="nav-link active" href="#idocs_start1"
+                >What is testing</a
+              >
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_installation1"
+                    >What is Testing</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_html_structure1"
+                    >Testing Types</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_sass1">Unit Test</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_color_schemes1"
+                    >What is Pytest
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_theme_customization1"></a>
+                </li>
+              </ul>
+            </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#idocs_start">Getting Started</a>
+              <a class="nav-link" href="#idocs_start">Pytest</a>
               <ul class="nav flex-column">
                 <li class="nav-item">
                   <a class="nav-link" href="#idocs_installation"
@@ -270,6 +298,221 @@
 	============================ -->
         <div class="idocs-content">
           <div class="container">
+            <section id="idocs_start1">
+              <h1>Documentation</h1>
+              <h2>Get Started With Pytest Documentation</h2>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- Installation
+		============================ -->
+            <section id="idocs_installation1">
+              <h2>What is Testing</h2>
+              <p class="lead">
+                Testing is the process of evaluating a system or its components
+                with the intent to find whether it satisfies the specified
+                requirements or not. Testing is a critical step in the software
+                development process, as it helps to ensure that the software is
+                of high quality and is fit for its intended purpose.
+              </p>
+              <p>
+                There are several different types of tests that can be performed
+                on a system, including unit tests, integration tests, functional
+                tests, regression tests, performance tests, and security tests.
+                The specific types of tests that are appropriate for a given
+                system will depend on the nature of the system and the goals of
+                the testing.
+              </p>
+              <p>
+                Testing is typically done by a combination of automated tests
+                and manual tests. Automated tests are run using specialized
+                software tools, and they can be run quickly and consistently.
+                Manual tests are performed by a human tester, and they are
+                typically used to test scenarios that are difficult to automate
+                or to validate the results of automated tests.
+              </p>
+              <p>
+                Overall, testing is an important part of the software
+                development process, as it helps to ensure that the software is
+                of high quality and is fit for its intended purpose.
+              </p>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- HTML Structure
+		============================ -->
+            <section id="idocs_html_structure1">
+              <h2>Testing Types</h2>
+              <p>
+                There are several different types of tests that you can write
+                for your application, depending on your goals and the nature of
+                your code. Here are a few common types of tests:
+              </p>
+              <ol>
+                <li>
+                  <strong>Unit tests</strong>: These tests focus on testing a
+                  single unit of code, such as a function or method, in
+                  isolation from the rest of the application. Unit tests are
+                  typically small and fast, and they are used to ensure that
+                  individual units of code are working correctly.
+                </li>
+                <li>
+                  <strong>Integration tests</strong>: These tests focus on
+                  testing the interaction between different parts of the
+                  application. Integration tests are used to ensure that
+                  different components of the application work together
+                  correctly.
+                </li>
+                <li>
+                  <strong>Functional tests</strong>: These tests focus on
+                  testing the functionality of the application from the user's
+                  perspective. Functional tests simulate a user interacting with
+                  the application, and are used to ensure that the application
+                  is working correctly from end to end.
+                </li>
+                <li>
+                  <strong>Regression tests</strong>: These tests are used to
+                  ensure that changes to the code have not introduced any new
+                  bugs or regressions. Regression tests are often run after
+                  making changes to the code to ensure that the changes have not
+                  broken any existing functionality.
+                </li>
+                <li>
+                  <strong>Performance tests</strong>: These tests are used to
+                  measure the performance of the application and identify any
+                  bottlenecks or issues. Performance tests can be run under
+                  different load scenarios to simulate real-world usage and
+                  identify any performance issues.
+                </li>
+                <li>
+                  <strong>Security tests</strong>: These tests are used to
+                  identify any security vulnerabilities in the application.
+                  Security tests can include testing for common vulnerabilities
+                  such as SQL injection attacks or cross-site scripting (XSS)
+                  attacks.
+                </li>
+              </ol>
+              <p>
+                Which types of tests you choose to write will depend on the
+                nature of your application and the goals of your testing. It's
+                generally a good idea to write a mix of different types of tests
+                to ensure that your
+              </p>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- Sass
+		============================ -->
+            <section id="idocs_sass1">
+              <h2>Unit Test</h2>
+              <p>
+                A unit test is a type of automated test that focuses on testing
+                a single unit of code, such as a function or method, in
+                isolation from the rest of the application. Unit tests are
+                typically small and fast, and they are used to ensure that
+                individual units of code are working correctly. Unit tests are
+                typically written by developers as part of the development
+                process, and they are usually run automatically as part of the
+                build process. This helps to ensure that changes to the code
+                have not introduced any new bugs or regressions. Unit tests are
+                typically written using a testing framework, such as pytest,
+                JUnit, or NUnit. The testing framework provides a set of tools
+                and APIs that make it easier to write, run, and maintain unit
+                tests. Overall, unit tests are an important part of the software
+                development process, as they help to ensure that the code is of
+                high quality and is working correctly. By writing and
+                maintaining a suite of unit tests, you can catch bugs and other
+                issues early on, which can save time and effort in the long run.
+              </p>
+              <p>
+                There are a few common patterns that are often followed when
+                writing unit tests:
+              </p>
+              <ol>
+                <li>
+                  <strong>Arrange-Act-Assert (AAA)</strong>: The AAA pattern
+                  involves setting up the test inputs (arrange), executing the
+                  code under test (act), and then verifying the output (assert).
+                  This pattern helps to organize the test code and make it
+                  easier to understand.
+                </li>
+                <li>
+                  <strong>Given-When-Then </strong>: The Given-When-Then pattern
+                  is similar to the AAA pattern, but it emphasizes the role of
+                  the inputs and outputs in the test. The "given" step
+                  represents the setup of the test inputs, the "when" step
+                  represents the execution of the code under test, and the
+                  "then" step represents the verification of the output.
+                </li>
+                <li>
+                  <strong>Test-driven development (TDD): </strong> TDD is a
+                  software development process in which unit tests are written
+                  before the code they are testing. The goal of TDD is to write
+                  code that is specifically designed to pass the unit tests,
+                  which helps to ensure that the code is correct and of high
+                  quality.
+                </li>
+                <li>
+                  <strong>Behavior-driven development (BDD): </strong>BDD is a
+                  software development process in which tests are written in a
+                  natural language syntax that describes the behavior of the
+                  system under test. BDD tests are often more high-level and
+                  focus on the overall behavior of the system rather than
+                  individual units of code.
+                </li>
+              </ol>
+              <p>
+                Which pattern you choose to follow when writing unit tests will
+                depend on your personal preference and the needs of your
+                project. It's generally a good idea to choose a pattern that is
+                easy to understand and that helps to ensure that your tests are
+                well-structured and maintainable.
+              </p>
+            </section>
+
+            <hr class="divider" />
+
+            <!-- Color Schemes
+		============================ -->
+            <section id="idocs_color_schemes1">
+              <h2>What is Pytest</h2>
+              <p>
+                pytest is a testing framework for Python that makes it easy to
+                write and run tests. Here are some of the fundamental concepts
+                and features of pytest:
+              </p>
+              <ol>
+                <li>
+                  <strong>Test functions</strong>: pytest tests are defined
+                  using functions. To write a test using pytest, you define a
+                  function that represents the test and decorate it with the
+                  @pytest.mark.test decorator. The test function should contain
+                  the code that exercises the code being tested and makes
+                  assertions about the expected behavior.
+                </li>
+                <li>
+                  <strong>Test discovery</strong>: pytest can automatically
+                  discover and run tests in your codebase. By default, pytest
+                  will look for test functions in files with names that match
+                  the pattern test_*.py or *_test.py, and it will also look for
+                  test functions inside classes that are decorated with the
+                  @pytest.mark.test decorator.
+                </li>
+                <li>
+                  <strong>Test fixtures</strong>: pytest allows you to define
+                  fixtures that can be used to set up and clean up resources
+                  needed by your tests. Fixtures are defined using functions
+                  decorated with the @pytest.fixture decorator, and they can be
+                  passed as arguments to test functions to provide access to the
+                  resources they manage.
+                </li>
+              </ol>
+            </section>
+
+            <hr class="divider" />
             <!-- Getting Started
 		============================ -->
             <section id="idocs_start">
@@ -320,6 +563,18 @@
                   </p>
                 </li>
               </ol>
+
+              <iframe
+                frameborder="0"
+                width="100%"
+                height="500px"
+                src="https://replit.com/@BELHAIMERABDELK/Testing?embed=true"
+                scrolling="no"
+                frameborder="no"
+                allowtransparency="true"
+                allowfullscreen="true"
+                sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"
+              ></iframe>
             </section>
 
             <hr class="divider" />
@@ -665,5 +920,13 @@ python_files = tests.py test_*.py *_tests.py
     <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
     <!-- Custom Script -->
     <script src="{% static 'js/theme.js' %}"></script>
+    <script>
+      fetch("https://replit.com/@BELHAIMERABDELK/Testing")
+        .then((response) => response.json())
+        .then((data) => {
+          // Use the "html" field of the oEmbed data to embed the Repl.it code or shell
+          document.getElementById("ter").innerHTML = data.html;
+        });
+    </script>
   </body>
 </html>
