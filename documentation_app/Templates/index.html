@@ -272,8 +272,11 @@
               <a class="nav-link" href="#idocs_layout">Demo_Practice</a>
               <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a class="nav-link" href="#idocs_header">Setup & Testing</a>
+                  <a class="nav-link" href="#idocs_header"
+                    >Demo Test using Pytest</a
+                  >
                 </li>
+                {% comment %}
                 <li class="nav-item">
                   <a class="nav-link" href="#idocs_navbar"
                     >Fixtures & Fixture Factory</a
@@ -289,6 +292,32 @@
                     >Testing with Pytest, Selenium</a
                   >
                 </li>
+                {% endcomment %}
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#idocs_layout3">Automat Uint Test</a>
+              <ul class="nav flex-column">
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_header3">Example</a>
+                </li>
+                {% comment %}
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_navbar"
+                    >Fixtures & Fixture Factory</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_sidebar"
+                    >Factory Boy and Faker</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#idocs_footer"
+                    >Testing with Pytest, Selenium</a
+                  >
+                </li>
+                {% endcomment %}
               </ul>
             </li>
           </ul>
@@ -516,8 +545,7 @@
             <!-- Getting Started
 		============================ -->
             <section id="idocs_start">
-              <h1>Documentation</h1>
-              <h2>Get Started With Pytest Documentation</h2>
+              <h1>Pytest</h1>
             </section>
 
             <hr class="divider" />
@@ -563,18 +591,6 @@
                   </p>
                 </li>
               </ol>
-
-              <iframe
-                frameborder="0"
-                width="100%"
-                height="500px"
-                src="https://replit.com/@BELHAIMERABDELK/Testing?embed=true"
-                scrolling="no"
-                frameborder="no"
-                allowtransparency="true"
-                allowfullscreen="true"
-                sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts allow-modals"
-              ></iframe>
             </section>
 
             <hr class="divider" />
@@ -763,49 +779,19 @@ def test_division_by_zero():
 		============================ -->
             <section id="idocs_layout">
               <h2>Demo Practice</h2>
-              <p class="lead mb-5">
-                Documentation and examples for header, navbar, sidebar, footer
-              </p>
+              <p class="lead mb-5">Examples Using Pytest</p>
             </section>
 
             <!-- Header
 		============================ -->
             <section id="idocs_header">
-              <h2>Setup & Testing</h2>
-              <p>
-                To set up pytest in a Django project, you will need to do the
-                following steps: :
-              </p>
-              <ol>
-                <li>
-                  Install the pytest and pytest-django packages using pip:
-                </li>
-                <br /><br />
-                <pre><code class="bash">
-pip install pytest pytest-django
-</code></pre>
-                <li>
-                  Create a tests directory at the root level of your Django
-                  project. This is where you will put your tests.
-                </li>
-                <li>Point pytest to your Django settings</li>
-                <p>
-                  You need to tell pytest which Django settings should be used
-                  for test runs. The easiest way to achieve this is to create a
-                  pytest configuration file with this information.
-                </p>
-                <li>
-                  Create a file called pytest.ini in your project root directory
-                  that contains:
-                </li>
-                <pre><code class="python">
-[pytest]
-DJANGO_SETTINGS_MODULE = yourproject.settings
-
-python_files = tests.py test_*.py *_tests.py
-
-</code></pre>
-              </ol>
+              <h2>Demo Test using Pytest</h2>
+              <iframe
+                frameborder="0"
+                width="100%"
+                height="700px"
+                src="https://replit.com/@BELHAIMERABDELK/Testing?embed=true"
+              ></iframe>
             </section>
 
             <hr class="divider" />
