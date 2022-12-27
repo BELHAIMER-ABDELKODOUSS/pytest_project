@@ -296,28 +296,24 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#idocs_layout3">Automat Uint Test</a>
+              <a class="nav-link" href="#idocs_html_structure5"
+                >Performance Test</a
+              >
               <ul class="nav flex-column">
                 <li class="nav-item">
-                  <a class="nav-link" href="#idocs_header3">Example</a>
-                </li>
-                {% comment %}
-                <li class="nav-item">
-                  <a class="nav-link" href="#idocs_navbar"
-                    >Fixtures & Fixture Factory</a
+                  <a class="nav-link" href="#idocs_installation5"
+                    >What is Performance Test</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#idocs_sidebar"
-                    >Factory Boy and Faker</a
-                  >
+                  <a class="nav-link" href="#idocs_sass5">pytest benchmark</a>
                 </li>
+
                 <li class="nav-item">
-                  <a class="nav-link" href="#idocs_footer"
-                    >Testing with Pytest, Selenium</a
-                  >
+                  <a class="nav-link" href="#idocs_color_schemes5"
+                    >Pytest-Timeout
+                  </a>
                 </li>
-                {% endcomment %}
               </ul>
             </li>
           </ul>
@@ -597,178 +593,6 @@
 
             <!-- HTML Structure
 		============================ -->
-            <section id="idocs_html_structure">
-              <h2>Create your first test</h2>
-              <p>To create a test with Pytest, you need to do the following:</p>
-              <ol>
-                <li>
-                  Create a Python file in your project directory. This file will
-                  contain your test functions.
-                </li>
-                <li>Import the pytest module.</li>
-                <li>
-                  Define a test function by decorating it with the
-                  @pytest.mark.test decorator.
-                </li>
-                <li>Write the code for your test inside the test function.</li>
-                <li>Run the test using the pytest command.</li>
-              </ol>
-              <p>
-                Here's an example of a simple test function that checks if the
-                result of the add function is correct:
-              </p>
-
-              <pre><code class="python">
-# test_example.py;
-import pytest
-
-def add(x, y):
-    return x + y
-
-def test_add():
-    assert add(2, 3) == 5
-
-</code></pre>
-
-              <p>
-                To run this test, you can use the pytest command from the
-                command line:
-              </p>
-              <pre><code class="bash">
-$ pytest test_example.py
-              </code></pre>
-              <p>
-                This will run the test_add test function and print the result.
-                If the test passes, you should see a message like this:
-              </p>
-              <pre><code class="bash">== 1 passed in 0.01s ==</code></pre>
-              <p>
-                If the test fails, you will see an error message indicating what
-                went wrong. That's it! You've just written and run your first
-                test with Pytest. You can now add more test functions to your
-                test file and run them using the pytest command.
-              </p>
-            </section>
-
-            <hr class="divider" />
-
-            <!-- Sass
-		============================ -->
-            <section id="idocs_sass">
-              <h2>Run multiple tests</h2>
-              <p>To run multiple tests using Pytest, you can either:</p>
-              <ol>
-                <li>Create multiple test functions in the same Python file.</li>
-                <li>Create multiple test files and run them all at once.</li>
-              </ol>
-              <p>
-                Here's an example of how you can create multiple test functions
-                in the same Python file:
-              </p>
-              <pre><code class="python">
-# test_example.py
-import pytest
-
-def add(x, y):
-    return x + y
-
-def test_add():
-    assert add(2, 3) == 5
-
-def test_add_negative():
-    assert add(-1, -1) == -2
-              </code></pre>
-              <p>
-                To run all of these tests, you can use the pytest command from
-                the command line:
-              </p>
-              <pre><code class="bash">
-$ pytest test_example.py
-              </code></pre>
-              <p>
-                This will run both the test_add and test_add_negative test
-                functions and print the result. Alternatively, you can also
-                create multiple test files and run them all at once. For
-                example, you might have a file called test_add.py that contains
-                tests for the add function, and another file called
-                test_subtract.py that contains tests for the subtract function.
-                To run all of these tests, you can use the pytest command
-                followed by a directory path:
-              </p>
-              <pre><code class="bash">$ pytest tests/</code></pre>
-              <p>
-                This will run all tests in the tests directory and its
-                subdirectories. You can also use the -k option to specify a test
-                name pattern to filter the tests that you want to run. For
-                example, to run only the tests that contain the word "add" in
-                their names, you can use the following command:
-              </p>
-              <pre><code class="bash">
-$ pytest -k add
-              </code></pre>
-              <p>
-                This will run all tests that match the pattern "add" in their
-                names, regardless of which file they are in.
-              </p>
-            </section>
-
-            <hr class="divider" />
-
-            <!-- Color Schemes
-		============================ -->
-            <section id="idocs_color_schemes">
-              <h2>Assert that a certain exception is raised</h2>
-              <p>
-                To assert that a certain exception is raised in Pytest, you can
-                use the pytest.raises function. This function allows you to test
-                whether a block of code raises an expected exception. Here's an
-                example of how you can use pytest.raises to test for an
-                exception:
-              </p>
-              <pre><code class="python">             
-import pytest
-
-def test_division_by_zero():
-    with pytest.raises(ZeroDivisionError):
-        1 / 0
-</code></pre>
-
-              <p>
-                In this example, the test function uses the pytest.raises
-                function to wrap a block of code that divides 1 by 0. This block
-                of code is expected to raise a ZeroDivisionError, and the
-                pytest.raises function will catch this exception and consider
-                the test to be a success. If the exception is not raised, or if
-                a different exception is raised, the test will fail. You can
-                also use the pytest.raises function to test for specific
-                exception messages or to specify the expected exception type as
-                an argument. For example:
-              </p>
-              <pre><code>
-import pytest
-
-def test_division_by_zero():
-    with pytest.raises(ZeroDivisionError, match='division by zero'):
-        1 / 0
-</code></pre>
-              <p>
-                This test will only pass if a ZeroDivisionError is raised with
-                the message "division by zero". You can also test for multiple
-                exception types by using a tuple of exception types as the
-                argument to pytest.raises. For example:
-              </p>
-              <pre><code>
-import pytest
-
-def test_division_by_zero():
-    with pytest.raises((ZeroDivisionError, TypeError)):
-        1 / 'a'
-</code></pre>
-              <p>
-                This test will pass if either a ZeroDivisionError or a TypeError
-                is raised.
-              </p>
-            </section>
 
             <hr class="divider" />
 
@@ -805,9 +629,201 @@ def test_division_by_zero():
 		============================ -->
 
             <hr class="divider" />
+            <section id="idocs_installation4">
+              <h2>Installation</h2>
+              <p class="lead">
+                To install Pytest, you need to have Python installed on your
+                system. If you don't have Python installed, you can download and
+                install it from the official Python website
+                (https://www.python.org/). :
+              </p>
+              <p>
+                Once you have Python installed, you can use pip, the package
+                manager for Python, to install Pytest. To install Pytest using
+                pip, follow these steps:
+              </p>
+              <ol>
+                <li>Open a terminal or command prompt window</li>
+                <li>
+                  Make sure that you have the latest version of
+                  <strong>pip</strong> by running the following command:
+                  <strong>pip install --upgrade pip</strong>
+                </li>
+                <li>
+                  Install Pytest by running the following command:
+                  <strong>pip install pytest</strong>
+                </li>
+                <li>
+                  <p>
+                    That's it! Pytest should now be installed on your system and
+                    ready to use. You can verify that Pytest is installed by
+                    running the pytest --version command, which should print the
+                    version number of Pytest that you have installed.
+                    Alternatively, you can also install Pytest from source by
+                    downloading the source code from the Pytest GitHub
+                    repository (https://github.com/pytest-dev/pytest) and
+                    running the python setup.py install command. However, this
+                    method is not recommended unless you have a specific reason
+                    for installing Pytest from source.
+                  </p>
+                </li>
+              </ol>
+            </section>
+            <!-- Changelog	============================ -->
+            <section id="idocs_html_structure5">
+              <h2>performance testing</h2>
+              <p>What is performance testing</p>
+              <section id="idocs_installation5">
+                <p>
+                  Performance testing is the process of evaluating the
+                  performance characteristics of a system or application under a
+                  defined workload. It is typically conducted to ensure that a
+                  system meets the performance requirements specified in its
+                  design and can handle the expected workload in a production
+                  environment.
+                </p>
+                <p>
+                  There are many different approaches to performance testing,
+                  depending on the type of system being tested and the
+                  performance characteristics that are of interest. Some common
+                  types of performance tests include:
+                </p>
+              </section>
+              <ol>
+                <li>
+                  Load testing: This involves subjecting a system to increasing
+                  levels of workload to determine how well it performs under
+                  different levels of demand. This can help identify bottlenecks
+                  and performance issues that may not be apparent at lower
+                  workloads.
+                </li>
+                <li>
+                  Stress testing: This involves subjecting a system to extreme
+                  levels of workload to determine how it performs under extreme
+                  conditions. This can help identify the maximum capacity of a
+                  system and the point at which it begins to degrade or fail.
+                </li>
+                <li>
+                  Endurance testing: This involves subjecting a system to a
+                  sustained workload over an extended period of time to
+                  determine how it performs under long-term conditions. This can
+                  help identify performance issues that may not manifest until
+                  after the system has been in operation for a prolonged period.
+                </li>
+                <li>
+                  Scalability testing: This involves testing a system's ability
+                  to handle increased workload by adding more resources (e.g.,
+                  CPU, memory, network bandwidth). This can help identify the
+                  optimal configuration for a system and the point at which
+                  adding additional resources no longer improves performance.
+                </li>
+              </ol>
+              <p>
+                Performance testing is typically conducted using specialized
+                tools and frameworks that are designed to generate and measure
+                the performance of a system under a variety of workloads. These
+                tools can be used to simulate different types of user behavior,
+                measure response times and throughput, and collect other
+                performance-related data.
+              </p>
+              <p>
+                It is important to carefully plan and design a performance
+                testing strategy to ensure that the tests are representative of
+                the expected production workload and are able to accurately
+                measure the desired performance characteristics.
+              </p>
+            </section>
+            <section id="idocs_sass5">
+              <h2>Pytest Benchmarks</h2>
+              <p>Pytest Benchmarks</p>
 
-            <!-- Changelog
-		============================ -->
+              <p>
+                pytest is a popular testing framework for Python that can be
+                used to write and execute unit tests, integration tests, and
+                functional tests. It includes several features that make it easy
+                to write and run tests, including support for test discovery,
+                automatic test execution, and the ability to run tests in
+                parallel.
+              </p>
+              <p>
+                pytest also includes a benchmarking feature that allows you to
+                measure the performance of individual test functions or groups
+                of test functions. This can be useful for identifying
+                performance issues in your code and for tracking the performance
+                of your tests over time.
+              </p>
+              <p>
+                To use the benchmarking feature in pytest, you will need to
+                install the pytest-benchmark plugin. Once the plugin is
+                installed, you can use the @pytest.mark.benchmark decorator to
+                mark a test function as a benchmark. When you run the tests,
+                pytest will execute the benchmark function multiple times and
+                collect performance data, including the minimum, maximum, and
+                average execution time.
+              </p>
+              <img src="{% static 'images/screenshot-compare.png' %}" alt="" />
+              <img
+                src="{% static 'images/sample-tests_test_normal.py_test_xfast_parametrized[0].svg' %}"
+                alt=""
+              />
+            </section>
+            <section id="idocs_color_schemes5">
+              <h2>Pytest Timeout</h2>
+              <p>
+                pytest-timeout is a plugin for pytest that allows you to specify
+                a timeout for individual test functions or groups of test
+                functions. This can be useful for performance testing, as it
+                allows you to fail a test if it takes longer than a specified
+                amount of time to execute.
+              </p>
+              <p>
+                To use pytest-timeout, you will need to install the plugin and
+                then use the @pytest.mark.timeout decorator to mark a test
+                function or group of test functions with a timeout. Here is an
+                example of how to use the @pytest.mark.timeout decorator to
+                specify a timeout for a test function:
+              </p>
+              <p>
+                To use pytest-timeout, you will need to install the plugin and
+                then use the @pytest.mark.timeout decorator to mark a test
+                function or group of test functions with a timeout. Here is an
+                example of how to use the @pytest.mark.timeout decorator to
+                specify a timeout for a test function:
+              </p>
+              <pre>
+                <code>
+import pytest
+
+@pytest.mark.timeout(5)  # timeout in seconds
+def test_function_with_timeout():
+    # Test code goes here
+    pass
+
+                </code>
+              </pre>
+              <p>
+                This will cause the test to fail if it takes longer than 5
+                seconds to execute. You can also use the @pytest.mark.timeout
+                decorator to specify a timeout for a group of test functions by
+                applying it to a test class or module.
+              </p>
+              <pre>
+                <code>
+import pytest
+
+@pytest.mark.timeout(5)  # timeout in seconds
+class TestClassWithTimeout:
+    def test_function_1(self):
+        # Test code goes here
+        pass
+
+    def test_function_2(self):
+        # Test code goes here
+        pass
+
+                </code>
+              </pre>
+            </section>
           </div>
         </div>
       </div>
